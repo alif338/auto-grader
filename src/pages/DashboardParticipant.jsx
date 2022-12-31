@@ -84,11 +84,11 @@ export function DashboardParticipant() {
             <Spacer />
             <Button colorScheme={'teal'} variant='outline' onClick={logout}>Logout</Button>
           </HStack>
-          <Heading as="h2" size="sm" marginBottom={'2'}>Nama Peserta: {localStorage.getItem('name')}</Heading>
-          <Heading as="h2" size="sm" marginBottom={'2'}>Kode Ujian: {localStorage.getItem('exam_code')}</Heading>
-          <Heading as="h2" size="sm" marginBottom={'2'}>Deskripsi:</Heading>
+          <Heading as="h2" size="sm" marginBottom={'2'}>Participant Name: {localStorage.getItem('name')}</Heading>
+          <Heading as="h2" size="sm" marginBottom={'2'}>Exam Code: {localStorage.getItem('exam_code')}</Heading>
+          <Heading as="h2" size="sm" marginBottom={'2'}>Description:</Heading>
           <Text marginBottom={'6'}>{exam.description}</Text>
-          <Button colorScheme="teal" onClick={() => setTestMode(true)}>Mulai Test</Button>
+          <Button colorScheme="teal" onClick={() => setTestMode(true)}>Start Exam</Button>
         </Container>}
     </Center>
   )

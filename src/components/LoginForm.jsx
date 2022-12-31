@@ -75,7 +75,7 @@ export function LoginForm() {
         borderRadius={'lg'}
         boxShadow={'lg'}
       >
-        <Heading as="h1" size="xl" marginBottom={'12'}>Masuk Sebagai {query.get('type').toLocaleUpperCase()}</Heading>
+        <Heading as="h1" size="xl" marginBottom={'12'}>Sign In as {query.get('type').toLocaleUpperCase()}</Heading>
         <FormControl>
           <FormLabel>{query.get('type') == 'exam-creator' ? 'Username' : 'Your Name'} </FormLabel>
           <Input 
@@ -93,7 +93,7 @@ export function LoginForm() {
             placeholder={query.get('type') == 'exam-creator' ? 'exam-creator' : ""}
           />
           <Box height={'12'} />
-          <Button colorScheme="teal" type="submit" onClick={doLogin}>Masuk</Button>
+          <Button colorScheme="teal" type="submit" onClick={doLogin}>Sign In</Button>
         </FormControl>
       </Container>
     </Center>
