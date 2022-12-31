@@ -5,13 +5,11 @@ import {
   Heading, 
   HStack, 
 } from "@chakra-ui/react";
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import background from '../assets/image/login-bg.jpg'
-import { LoginForm } from "../components/LoginForm";
 
 export function Login() {
-  const [loginType, setLoginType] = useState('');
 
   return (
     <Center
@@ -30,10 +28,10 @@ export function Login() {
         <Heading as="h1" size="xl" marginBottom={'12'}>Auto Grader Exam</Heading>
         <HStack>
           <Link to={`/login?type=exam-creator`}>
-            <Button colorScheme="teal">Masuk Sebagai Pembuat Soal</Button>
+            <Button colorScheme="teal">Sign In as Exam Creator</Button>
           </Link>
           <Link to={`/login?type=participant`}>
-            <Button>Masuk Sebagai Partisipan</Button>
+            <Button>Sign In as Participant</Button>
           </Link>
         </HStack>
       </Container>

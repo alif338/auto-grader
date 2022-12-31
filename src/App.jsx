@@ -1,9 +1,8 @@
 import { Route, Router, Routes } from "react-router-dom"
 import { LoginForm } from "./components/LoginForm"
-import { CreateUpdateExam } from "./pages/CreateUpdateExam"
+import { CreateExam } from "./pages/CreateExam"
 import { DashboardExamCreator } from "./pages/DashboardExamCreator"
 import { DashboardParticipant } from "./pages/DashboardParticipant"
-import { DoingExam } from "./pages/DoingExam"
 import { Login } from "./pages/Login"
 
 import './App.css'
@@ -17,9 +16,8 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/participant" element={<DashboardParticipant />} />
-        <Route path="/participant/:examid" element={<DoingExam />} />
         <Route path="/exam-creator" element={<DashboardExamCreator />} />
-        <Route path="/exam-creator/create" element={<CreateUpdateExam />} />
+        <Route path="/exam-creator/create" element={<CreateExam />} />
       </Routes>
     </div>
   )
